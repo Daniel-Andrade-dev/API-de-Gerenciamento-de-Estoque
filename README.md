@@ -2,6 +2,7 @@
 
 Uma API REST simples para gerenciamento de estoque, desenvolvida em Python com persistência de dados utilizando SQLite3.
 
+
 🚀 Funcionalidades
 
 A API permite realizar operações completas de CRUD em produtos:
@@ -108,3 +109,10 @@ O método PATCH atualiza apenas os campos enviados
 O banco SQLite é armazenado localmente no projeto
 
 A API possui validação básica para garantir integridade dos dados
+
+
+🖥️ Tecnologias ultilizadas
+
+Flask MicroFramework do Python
+SQLite3
+Biblioteca datetime do Python
