@@ -114,4 +114,4 @@ class Estoque:
                 conn.commit()
             return cur.rowcount > 0 
         except lite.Error as e:
-           raise ValueError(f"Erro ao fazer atualização >> {e}")
+          raise ValueError(f"Erro ao fazer atualização >> {e}")
