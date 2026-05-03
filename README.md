@@ -56,15 +56,15 @@ pip install -r requirements.txt
 
 2. Iniciar o servidor
 
-flask run
+Primeiro tente com -> flask run
 
 Caso não funcione use:
 
-python routes_estoque.py
+-> python routes_estoque.py
 
 Case estiver no Linux:
 
-python3 routes_estoque.py
+-> python3 routes_estoque.py
 
 
 🧪 Testando a API
