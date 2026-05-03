@@ -97,4 +97,5 @@ Exemplo de produto:
 ⚠️ A data e hora não precisam ser enviadas — elas são geradas automaticamente pela API.
 
 Projeto feito para treinar como funciona uma API-REST entendendo seus Mêtodos GET,POST,PUT,PATCH E DELETE
+
 E para ampliar conhecimento sobre Back-End
