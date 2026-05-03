@@ -99,7 +99,11 @@ Exemplo de produto:
 ⚠️ A data e hora não precisam ser enviadas, pois são geradas automaticamente pela API.
 
 🧠 Observações importantes
+
 O método PUT atualiza todos os campos do produto
+
 O método PATCH atualiza apenas os campos enviados
+
 O banco SQLite é armazenado localmente no projeto
+
 A API possui validação básica para garantir integridade dos dados
