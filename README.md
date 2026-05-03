@@ -72,11 +72,14 @@ Case estiver no Linux:
 Você pode testar os endpoints utilizando ferramentas como:
 
 Postman
+
 Insomnia
 
 
 📌 Exemplo de fluxo:
+
 Inicie o servidor
+
 Abra o Postman
 
 
