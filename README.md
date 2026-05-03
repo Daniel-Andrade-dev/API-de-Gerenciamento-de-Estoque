@@ -7,17 +7,24 @@ Uma API REST simples para gerenciamento de estoque, desenvolvida em Python com p
 A API permite realizar operações completas de CRUD em produtos:
 
 ✅ Cadastrar um produto
+
 📋 Listar todos os produtos
+
 🔍 Buscar um produto pelo ID
 ✏️ Atualizar um produto completamente (PUT)
+
 🧩 Atualizar parcialmente um produto (PATCH)
+
 ❌ Deletar um produto pelo ID
+
 ⚡ Funcionalidades Extras
 
 Além do CRUD básico, a API possui validações e automações importantes:
 
 🕒 Data e hora automáticas
 Ao cadastrar um produto, a data e o horário são gerados automaticamente.
+
+
 🛡️ Validação de dados
 Preço não pode ser negativo
 Quantidade não pode ser negativa
@@ -31,6 +38,8 @@ O projeto utiliza SQLite3, com os seguintes objetivos:
 
 Persistir os dados localmente (os dados não são perdidos ao encerrar a API)
 Simplicidade de configuração (não precisa instalar servidor de banco)
+
+
 🔧 Atualização dinâmica (PATCH)
 
 Foi implementado um sistema de update dinâmico, permitindo que o método PATCH atualize apenas os campos enviados no JSON, sem sobrescrever os demais dados.
@@ -67,7 +76,11 @@ Insomnia
 📌 Exemplo de fluxo:
 Inicie o servidor
 Abra o Postman
-Faça requisições para os endpoints (GET, POST, PUT, PATCH, DELETE)
+
+
+Faça requisições para os endpoints 
+(GET, POST, PUT, PATCH, DELETE)
+
 📁 Estrutura do JSON
 
 Exemplo de produto:
