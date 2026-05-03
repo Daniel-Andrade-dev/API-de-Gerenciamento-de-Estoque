@@ -1,122 +1,129 @@
-📦 API de Gerenciamento de Estoque
+# 📦 API de Gerenciamento de Estoque
 
-Uma API REST simples para gerenciamento de estoque, desenvolvida em Python com persistência de dados utilizando SQLite3.
+API REST simples para gerenciamento de estoque, desenvolvida em Python com persistência de dados utilizando SQLite3.
 
+---
 
-🚀 Funcionalidades
+## 🚀 Funcionalidades
 
 A API permite realizar operações completas de CRUD em produtos:
 
-✅ Cadastrar um produto
+* ✅ Cadastrar um produto
+* 📋 Listar todos os produtos
+* 🔍 Buscar um produto pelo ID
+* ✏️ Atualizar um produto completamente (PUT)
+* 🧩 Atualizar parcialmente um produto (PATCH)
+* ❌ Deletar um produto pelo ID
 
-📋 Listar todos os produtos
+---
 
-🔍 Buscar um produto pelo ID
+## ⚡ Funcionalidades Extras
 
-✏️ Atualizar um produto completamente (PUT)
+### 🕒 Data e hora automáticas
 
-🧩 Atualizar parcialmente um produto (PATCH)
-
-❌ Deletar um produto pelo ID
-
-⚡ Funcionalidades Extras
-
-Além do CRUD básico, a API possui validações e automações importantes:
-
-🕒 Data e hora automáticas
 Ao cadastrar um produto, a data e o horário são gerados automaticamente.
 
+### 🛡️ Validação de dados
 
-🛡️ Validação de dados
-Preço não pode ser negativo
-Quantidade não pode ser negativa
-Campos obrigatórios não podem estar vazios
+* ❌ Preço não pode ser negativo
+* ❌ Quantidade não pode ser negativa
+* ❌ Campos obrigatórios não podem estar vazios
 
-Essas validações evitam inconsistência no banco e tornam a API mais robusta.
+Essas validações evitam inconsistências no banco de dados e tornam a API mais robusta.
 
-🗄️ Banco de Dados
+---
 
-O projeto utiliza SQLite3, com os seguintes objetivos:
+## 🗄️ Banco de Dados
 
-Persistir os dados localmente (os dados não são perdidos ao encerrar a API)
+O projeto utiliza SQLite3 com os seguintes objetivos:
 
-Simplicidade de configuração (não precisa instalar servidor de banco)
+* Persistência local dos dados (não são perdidos ao encerrar a API)
+* Simplicidade de configuração (não requer servidor de banco de dados)
 
+---
 
-🔧 Atualização dinâmica (PATCH)
+## 🔧 Atualização dinâmica (PATCH)
 
-Foi implementado um sistema de update dinâmico, permitindo que o método PATCH:
+Foi implementado um sistema de atualização dinâmica que permite:
 
-Atualize apenas os campos enviados no JSON
-Preserve os demais dados no banco
+* Atualizar apenas os campos enviados no JSON
+* Preservar os demais dados já existentes no banco
 
+---
 
-⚙️ Como executar o projeto
+## ⚙️ Como executar o projeto
 
-1. Instalar as dependências
+### 1. Instalar as dependências
 
+```id="x1p9k2"
 pip install -r requirements.txt
+```
 
+### 2. Iniciar o servidor
 
-2. Iniciar o servidor
-
+```id="l0s8qd"
 flask run
+```
 
-Caso não funcione use:
+Caso não funcione:
 
--> python routes_estoque.py
+```id="r7m2zc"
+python routes_estoque.py
+```
 
-Case estiver no Linux:
+No Linux:
 
+```id="t4v8ne"
 python3 routes_estoque.py
+```
 
-🧪 Testando a API
+---
+
+## 🧪 Testando a API
 
 Você pode testar os endpoints utilizando ferramentas como:
 
-Postman
+* Postman
+* Insomnia
 
-Insomnia
+### 📌 Fluxo básico de uso:
 
+1. Inicie o servidor
+2. Abra o Postman ou Insomnia
+3. Realize requisições para os endpoints (GET, POST, PUT, PATCH, DELETE)
 
-📌 Exemplo de fluxo:
+---
 
-Inicie o servidor
-
-Abra o Postman
-
-
-Faça requisições para os endpoints 
-(GET, POST, PUT, PATCH, DELETE)
-
-📁 Estrutura do JSON
+## 📁 Estrutura do JSON
 
 Exemplo de produto:
 
+```json id="p9w3kx"
 {
   "nome": "Produto A",
   "preco": 100.0,
   "quantidade": 10
 }
+```
 
-⚠️ A data e hora não precisam ser enviadas, pois são geradas automaticamente pela API.
+⚠️ **Observação:**
+A data e hora não precisam ser enviadas, pois são geradas automaticamente pela API.
 
-🧠 Observações importantes
+---
 
-O método PUT atualiza todos os campos do produto
+## 🧠 Observações importantes
 
-O método PATCH atualiza apenas os campos enviados
+* O método **PUT** atualiza todos os campos do produto
+* O método **PATCH** atualiza apenas os campos enviados
+* O banco SQLite é armazenado localmente no projeto
+* A API possui validações básicas para garantir integridade dos dados
 
-O banco SQLite é armazenado localmente no projeto
+---
 
-A API possui validação básica para garantir integridade dos dados
+## 🛠️ Tecnologias utilizadas
 
+* Flask (framework web em Python)
+* SQLite3 (banco de dados)
+* Datetime (manipulação de data e hora)
 
-🖥️ Tecnologias utilizadas
-
-Flask MicroFramework do Python
-
-SQLite3
-
-
-Biblioteca datetime do Python
+---
