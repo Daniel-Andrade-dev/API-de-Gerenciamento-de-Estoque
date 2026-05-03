@@ -49,6 +49,8 @@ Foi implementado um sistema de update dinâmico, permitindo que o método PATCH:
 
 Atualize apenas os campos enviados no JSON
 Preserve os demais dados no banco
+
+
 ⚙️ Como executar o projeto
 
 1. Instalar as dependências
@@ -57,6 +59,7 @@ pip install -r requirements.txt
 
 
 2. Iniciar o servidor
+
 flask run
 
 Caso não funcione use:
@@ -66,6 +69,7 @@ Caso não funcione use:
 Case estiver no Linux:
 
 python3 routes_estoque.py
+
 🧪 Testando a API
 
 Você pode testar os endpoints utilizando ferramentas como:
