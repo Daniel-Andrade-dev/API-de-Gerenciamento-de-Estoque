@@ -114,5 +114,8 @@ A API possui validação básica para garantir integridade dos dados
 🖥️ Tecnologias ultilizadas
 
 Flask MicroFramework do Python
+
 SQLite3
+
+
 Biblioteca datetime do Python
