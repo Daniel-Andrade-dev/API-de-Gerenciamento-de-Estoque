@@ -59,11 +59,11 @@ Execute um dos comandos abaixo:
 
 flask run
 
-Caso não funcione:
+Caso não funcione use:
 
 python routes_estoque.py
 
-No Linux:
+Case estiver no Linux:
 
 python3 routes_estoque.py
 
@@ -74,6 +74,8 @@ Você pode testar os endpoints utilizando ferramentas como:
 
 Postman
 Insomnia
+
+
 📌 Exemplo de fluxo:
 Inicie o servidor
 Abra o Postman
@@ -94,8 +96,5 @@ Exemplo de produto:
 
 ⚠️ A data e hora não precisam ser enviadas — elas são geradas automaticamente pela API.
 
-🧠 Observações importantes
-O método PUT atualiza todos os campos do produto
-O método PATCH atualiza apenas os campos enviados
-O banco SQLite é armazenado localmente no projeto
-A API possui validação básica para garantir integridade dos dados
+Projeto feito para treinar como funciona uma API-REST entendendo seus Mêtodos GET,POST,PUT,PATCH E DELETE
+E para ampliar conhecimento sobre Back-End
