@@ -61,7 +61,7 @@ def atualizar_produtos(id):
     atualizou =  db.update_produto_all(nome,preco,qtd,id)
     if atualizou:
         return jsonify({'msg': f'Produto id {id} atualizado com sucesso. Horário de atualização {gerar_horario_agora()}'}), 200
-    return jsonify({'msg': 'Produto não foi encontrado !'}), 400
+    return jsonify({'msg': 'Produto não foi encontrado !'}), 404
 
 @app.route('/atualizarprodutoone/<int:id>', methods=['PATCH'])
 def atualizar_produto(id):    
@@ -74,7 +74,7 @@ def atualizar_produto(id):
 
     atualizou =  db.update_produto_one(nome,preco,qtd,id)
     if not atualizou:
-        return jsonify({'msg': 'Produto não foi encontrado !'}), 400
+        return jsonify({'msg': 'Produto não foi encontrado !'}), 404
     return jsonify({'msg': 'Produto atualizado com sucesso !'}), 200
 
 if __name__ == '__main__':

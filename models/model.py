@@ -85,8 +85,7 @@ class Estoque:
                 conn.commit()
             return cur.rowcount > 0 
         except lite.Error as e:
-            print("Erro ao deletar produto", e)
-            return False
+           raise ValueError(f"Erro ao fazer atualização >> {e}")
         
     def update_produto_one(self, produto, preco, quantidade, id_produto):
         try:
@@ -115,5 +114,4 @@ class Estoque:
                 conn.commit()
             return cur.rowcount > 0 
         except lite.Error as e:
-            print("Erro ao deletar produto", e)
-            return False
+           raise ValueError(f"Erro ao fazer atualização >> {e}")
