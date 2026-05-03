@@ -11,6 +11,7 @@ A API permite realizar operações completas de CRUD em produtos:
 📋 Listar todos os produtos
 
 🔍 Buscar um produto pelo ID
+
 ✏️ Atualizar um produto completamente (PUT)
 
 🧩 Atualizar parcialmente um produto (PATCH)
