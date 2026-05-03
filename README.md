@@ -24,6 +24,8 @@ Além do CRUD básico, a API possui validações e automações importantes:
 
 🕒 Data e hora automáticas
 Ao cadastrar um produto, a data e o horário são gerados automaticamente.
+
+
 🛡️ Validação de dados
 Preço não pode ser negativo
 Quantidade não pode ser negativa
@@ -37,18 +39,23 @@ O projeto utiliza SQLite3, com os seguintes objetivos:
 
 Persistir os dados localmente (os dados não são perdidos ao encerrar a API)
 Simplicidade de configuração (não precisa instalar servidor de banco)
+
+
 🔧 Atualização dinâmica (PATCH)
 
 Foi implementado um sistema de update dinâmico, permitindo que o método PATCH:
 
 Atualize apenas os campos enviados no JSON
 Preserve os demais dados no banco
+
 ⚙️ Como executar o projeto
+
 1. Instalar as dependências
 pip install -r requirements.txt
 
 
 2. Iniciar o servidor
+
 flask run
 
 Caso não funcione use:
@@ -58,6 +65,8 @@ python routes_estoque.py
 Case estiver no Linux:
 
 python3 routes_estoque.py
+
+
 🧪 Testando a API
 
 Você pode testar os endpoints utilizando ferramentas como:
