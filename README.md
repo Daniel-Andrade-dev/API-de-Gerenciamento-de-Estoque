@@ -38,6 +38,7 @@ Essas validações evitam inconsistência no banco e tornam a API mais robusta.
 O projeto utiliza SQLite3, com os seguintes objetivos:
 
 Persistir os dados localmente (os dados não são perdidos ao encerrar a API)
+
 Simplicidade de configuração (não precisa instalar servidor de banco)
 
 
