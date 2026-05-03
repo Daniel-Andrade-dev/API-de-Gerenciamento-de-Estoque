@@ -111,7 +111,7 @@ O banco SQLite é armazenado localmente no projeto
 A API possui validação básica para garantir integridade dos dados
 
 
-🖥️ Tecnologias ultilizadas
+🖥️ Tecnologias utilizadas
 
 Flask MicroFramework do Python
 
