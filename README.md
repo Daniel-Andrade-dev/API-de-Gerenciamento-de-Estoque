@@ -41,6 +41,8 @@ Foi implementado um sistema de update dinâmico, permitindo que o método PATCH 
 No terminal, execute:
 
 pip install -r requirements.txt
+
+
 2. Iniciar o servidor
 
 Execute um dos comandos abaixo:
